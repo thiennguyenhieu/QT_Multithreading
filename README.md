@@ -13,14 +13,6 @@ The thead event loop delivers events for all objects living in that thread.
 The solution for communicating from a secondary thead to the main thread is to use signal-slot connections across theads.
 When we connect objects living in the different threads, the mechanism becomes asynchronous.
 
-As the site is being served by Linux servers, the path is case sensitive.
-
-In order to make this work, replace emoticons with Emoticons in the provided url.
-
-enter image description here
-
-The following html code should properly display the image
-
 <img src="https://doc.qt.io/qt-5/images/threadsandobjects.png" alt="hi" class="inline"/>
 
 **Managing Threads (Reference from https://doc.qt.io/qt-5/qthread.html#details)**<br />
