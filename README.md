@@ -7,10 +7,10 @@ The Qt GUI must run in this thread.
 
 A secondary thread is commonly referred to as a "backend thread" because it is used to offload processing work from the main thread.
 This thread has its own event loop and can process events outside the main loop.
-There are some objects created and used from within this thead.
-The thead event loop delivers events for all objects living in that thread.
+There are some objects created and used from within this thread.
+The thread event loop delivers events for all objects living in that thread.
 
-The solution for communicating from a secondary thead to the main thread is to use signal-slot connections across theads.
+The solution for communicating from a secondary thread to the main thread is to use signal-slot connections across threads.
 When we connect objects living in the different threads, the mechanism becomes asynchronous.
 
 <img src="https://doc.qt.io/qt-5/images/threadsandobjects.png" alt="hi" class="inline"/>
